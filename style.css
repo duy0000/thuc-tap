@@ -1,0 +1,217 @@
+.fist-section {
+  background-image: url("/banner-sftxvn-20230909081527-pkt_f.jpg");
+  height: 500px;
+  background-position: 60% 20%;
+  z-index: 1;
+  color: #fff;
+  white-space: nowrap;
+}
+.message {
+  display: none;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+.active {
+  display: block;
+}
+.persent-sale {
+  font-weight: 800;
+  font-size: 80px;
+  color: rgb(251 214 138);
+  margin: -20px -50px 0 -50px;
+}
+.persent {
+  margin: -6px 0 0 0;
+  color: rgb(251 214 138);
+  font-weight: 800;
+}
+
+.bt-fist-section {
+  animation: pulse 0.5s infinite alternate;
+  background-color: rgb(251 214 138);
+  width: 150px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 15px;
+  box-shadow: 0 0 0 0.5px white;
+}
+.bt-fist-section:hover {
+  border: 1px solid black;
+}
+/*second */
+
+.second-section {
+  background-image: url("/bg-section-2.png");
+  background-color: black;
+  height: 500px;
+  z-index: 3;
+  margin-top: -30px;
+  border-radius: 10px;
+  color: #fff;
+}
+.img-list-secon-section {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: bottom left;
+}
+.block-section-second {
+  background-color: rgb(67 66 65);
+  /* height:200px;
+  width:450px; */
+  border: 0.5px solid white;
+  box-shadow: 0 0 0 5px rgb(67 66 65);
+  border-radius: 10px;
+  padding: 60px 10px;
+  margin: 0px 30px;
+}
+.img-list-third-section {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+/* 6th-section */
+.th6-form {
+  /* background-color: rgb(121, 119, 119);
+z-index: 10; */
+  width: 35%;
+  border-bottom: 1px solid black;
+  padding: 0 10px;
+}
+.form-control-lg {
+  height: 50px;
+  font-size: 15px;
+}
+.fist-block-6th-section {
+  background-image: url("/bg-section-6.png");
+  background-size: cover; /* Hiển thị toàn bộ ảnh mà không bị lặp lại */
+  background-position: center;
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  height: 550px; /* Đặt chiều cao cho phần tử */
+  width: 65%;
+}
+
+.text-form {
+  padding-left: 10px;
+}
+.fist-block-6th {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+.text-6th {
+  padding-left: 100px;
+  white-space: nowrap;
+}
+
+.img-7th {
+  width: 270px;
+  height: 200px;
+}
+
+.block-th7 {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+.p-d-top {
+  padding-top: 45px;
+}
+
+.section-8th {
+  background-color: #302b25;
+}
+.section-8th {
+  height: 700px;
+  background-image: url("/bg-section-8.jpg");
+  background-size: 65% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.floating-frame {
+  width: 800px;
+  height: 500px;
+  background-image: url("/bg-section-2.png");
+  background-color: rgba(31, 27, 27, 0.8);
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Đảm bảo khung nổi lên trên cùng */
+}
+.section-8th .text-white div .d-flex .col-2 {
+  border-radius: 50%;
+  background-color: rgb(251 214 138);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.section-8th .text-white div .d-flex:nth-child(-n + 2) {
+  border-bottom: 2px solid rgb(251, 214, 138);
+}
+
+.section-8th .text-white div .d-flex h2 i:nth-child(-n + 2) {
+  padding-bottom: 8px;
+}
+.section-8th .text-white div {
+  width: 100%;
+}
+
+.section-8th .text-white div .pl-2 {
+  margin-left: 10px;
+}
+
+.image-slider {
+  overflow: hidden;
+}
+
+.image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper img {
+  width: 25%;
+  height: 450px;
+  margin: 0 5px;
+}
+
+/* //////// */
+.container {
+  position: relative; /* Đặt vị trí tương đối cho container */
+  text-align: center; /* Căn giữa nội dung bên trong container */
+}
+
+.container i {
+  position: absolute; /* Đặt vị trí tuyệt đối cho các thẻ i */
+  top: 50%; /* Đưa thẻ i lên trên cùng của container */
+  transform: translateY(
+    -50%
+  ); /* Dịch chuyển thẻ i xuống dưới 50% của container */
+}
+
+.fa-chevron-left {
+  left: 0; /* Đặt thẻ i bên trái của container */
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.fa-chevron-right {
+  right: 0; /* Đặt thẻ i bên phải của container */
+  margin-right: 30px;
+  font-size: 30px;
+}
