@@ -99,6 +99,12 @@ z-index: 10; */
   width: 65%;
 }
 
+.d-block {
+  background-color: #f1eeee;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
 .text-form {
   padding-left: 10px;
 }
@@ -123,6 +129,9 @@ z-index: 10; */
 .block-th7 {
   border-bottom: 1px solid #000;
   padding: 10px 0;
+}
+.block-th7 div:nth-child(2) p i {
+  color: blue;
 }
 .p-d-top {
   padding-top: 45px;
@@ -151,7 +160,7 @@ z-index: 10; */
   transform: translate(-50%, -50%);
   z-index: 9999; /* Đảm bảo khung nổi lên trên cùng */
 }
-.section-8th .text-white div .d-flex .col-2 {
+.section-8th .text-white .th-8-chi .d-flex h2 {
   border-radius: 50%;
   background-color: rgb(251 214 138);
   display: flex;
@@ -189,7 +198,9 @@ z-index: 10; */
   height: 450px;
   margin: 0 5px;
 }
-
+.overlay {
+  display: none;
+}
 /* //////// */
 .container {
   position: relative; /* Đặt vị trí tương đối cho container */
