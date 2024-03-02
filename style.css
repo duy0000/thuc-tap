@@ -1,5 +1,5 @@
 .fist-section {
-  background-image: url("/banner-sftxvn-20230909081527-pkt_f.jpg");
+  background-image: url("/img/banner-sftxvn-20230909081527-pkt_f.jpg");
   height: 500px;
   background-position: 60% 20%;
   z-index: 1;
@@ -48,7 +48,7 @@
 /*second */
 
 .second-section {
-  background-image: url("/bg-section-2.png");
+  background-image: url("/img/bg-section-2.png");
   background-color: black;
   height: 500px;
   z-index: 3;
@@ -91,7 +91,7 @@ z-index: 10; */
   font-size: 15px;
 }
 .fist-block-6th-section {
-  background-image: url("/bg-section-6.png");
+  background-image: url("/img/bg-section-6.png");
   background-size: cover; /* Hiển thị toàn bộ ảnh mà không bị lặp lại */
   background-position: center;
   background-repeat: no-repeat; /* Không lặp lại ảnh */
@@ -133,7 +133,7 @@ z-index: 10; */
 }
 .section-8th {
   height: 700px;
-  background-image: url("/bg-section-8.jpg");
+  background-image: url("/img/bg-section-8.jpg");
   background-size: 65% 100%;
   background-position: right;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@ z-index: 10; */
 .floating-frame {
   width: 800px;
   height: 500px;
-  background-image: url("/bg-section-2.png");
+  background-image: url("/img/bg-section-2.png");
   background-color: rgba(31, 27, 27, 0.8);
   border: 1px solid #ccc;
   position: absolute;
