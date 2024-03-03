@@ -6,6 +6,15 @@
   color: #fff;
   white-space: nowrap;
 }
+.css-a .respon:hover {
+  color: rgb(251, 214, 138); /* Màu cho phần tử div khi hover */
+  background-color: aqua;
+}
+.css-a {
+  text-decoration: none;
+  color: black;
+}
+
 .message {
   display: none;
   background: linear-gradient(
@@ -194,7 +203,7 @@ z-index: 10; */
 }
 
 .image-wrapper img {
-  width: 25%;
+  width: 35%;
   height: 450px;
   margin: 0 5px;
 }

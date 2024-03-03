@@ -50,7 +50,9 @@
   }
   .block-section-second div {
     flex-direction: column;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin: -30px 0;
     padding: 0;
   }
   .d-block div p {
@@ -88,7 +90,7 @@
     display: flex;
     flex-direction: row;
     width: 350px;
-    margin-left: 50px;
+    margin-left: 10px;
   }
   .th6-section div div .pt-2 div p {
     white-space: nowrap;
@@ -241,6 +243,9 @@
   .block-section-second div {
     flex-direction: row;
   }
+  .block-section-second div {
+    margin: -30px 0 !important;
+  }
   .img-list-secon-section {
     width: 50%;
   }
@@ -255,13 +260,13 @@
     flex-direction: row-reverse !important;
   }
   .d-block img {
-    width: 50%;
+    width: 60%;
     margin: 5px 5px;
   }
   .d-block div {
     display: flex;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 5px;
   }
   .th6-section {
     height: 1000px;
@@ -275,6 +280,7 @@
     display: flex;
     flex-direction: row;
     width: 350px;
+    margin-left: -50px;
   }
   .th6-section div div .pt-2 div p {
     white-space: nowrap;
@@ -286,6 +292,9 @@
   .th6-section div div .pt-2 div h4 {
     margin-left: 55px;
     margin-top: 30px;
+  }
+  .fist-block-6th {
+    padding-left: 50px;
   }
   .fist-block-6th-section {
     width: 100%;
@@ -399,4 +408,191 @@
   .th-8-text {
     text-align: center;
   }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .fist-section {
+    display: flex;
+    margin-top: -80px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fist-section .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .fist-section .text h2 {
+    width: 500px;
+  }
+  #sale-ss1 {
+    width: 500px;
+  }
+  .second-section img,
+  .Third-section img {
+    width: 350px;
+  }
+  .second-section {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .second-section div div {
+    flex-direction: column;
+    margin: 0 0;
+  }
+
+  .second-section div div :nth-child(2) {
+    margin: 20px 0;
+  }
+  .second-section div div div,
+  .block-section-second div {
+    flex-direction: row;
+  }
+
+  .block-section-second div {
+    margin: -30px 0 !important;
+  }
+  /* .img-list-secon-section {
+    width: 50%;
+  } */
+  .second-section div div div div img {
+    width: 40%;
+    height: 120px;
+    object-fit: contain;
+  }
+  .second-section div div div div p {
+    width: 60%;
+    padding-left: 20px;
+  }
+  .d-block img {
+    width: 320px;
+    margin: 5px 5px;
+  }
+  .d-block div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  .th6-section {
+    height: 1000px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .th6-section div div .pt-2 {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+  }
+  .th6-section div div .pt-2 div p {
+    white-space: nowrap;
+    margin-left: 28px;
+  }
+  .th6-section div div .pt-2 div h1 {
+    margin-right: 55px;
+  }
+  .th6-section div div .pt-2 div h4 {
+    margin-left: 55px;
+    margin-top: 30px;
+  }
+  .fist-block-6th {
+    padding-left: 100px;
+  }
+  .fist-block-6th-section {
+    width: 100%;
+  }
+  .fist-block-6th div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+  }
+  .text-6th {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .th6-form {
+    width: 90%;
+    padding: 0 10px;
+  }
+  .th6-form :last-child {
+    padding-bottom: 10px;
+  }
+
+  .img-th7 {
+    position: relative; /* Đặt vị trí tương đối để phần tử con có thể được định vị tuyệt đối trong nó */
+  }
+
+  .overlay h4,
+  .overlay h6,
+  .overlay p {
+    color: white; /* Màu chữ trắng */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+  }
+
+  .section-8th {
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 550px;
+  }
+  .floating-frame {
+    width: 100%; /* Chiều rộng của khung là 100% so với lớp cha */
+    height: 100%; /* Chiều cao của khung là 100% so với lớp cha */
+    background-image: url("/img/bg-section-2.png");
+    background-color: rgba(31, 27, 27, 0.8);
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0; /* Bắt đầu từ đỉnh của lớp cha */
+    left: 0; /* Bắt đầu từ bên trái của lớp cha */
+    transform: translate(0, 0); /* Không cần dịch chuyển khung */
+    z-index: 9999; /* Đảm bảo khung nổi lên trên cùng */
+  }
+
+  .section-8th div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .section-8th div .th-8-chi {
+    order: 2;
+    margin-bottom: -0px;
+  }
+
+  .section-8th .text-white .th-8-chi .d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-8th .text-white .th-8-chi .d-flex h2 {
+    border-radius: 50%;
+    background-color: rgb(251 214 138);
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .section-8th .text-white .th-8-chi .d-flex p {
+    width: 70%;
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 450px;
+    margin: 0 5px;
+  }
+  .th-8-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 990px) {
 }
