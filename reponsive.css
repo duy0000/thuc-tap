@@ -173,6 +173,9 @@
     justify-content: center;
     width: 100%;
   }
+  .th-8-text {
+    text-align: center;
+  }
   .section-8th div .th-8-chi {
     order: 2;
     margin-bottom: -0px;
@@ -199,8 +202,26 @@
     height: 450px;
     margin: 0 5px;
   }
+  #sale-ss1 {
+    width: 500px;
+    justify-content: center;
+  }
 }
 @media (min-width: 551px) and (max-width: 767px) {
+  .button-nav {
+    animation: none;
+    width: 80px;
+    height: 25px;
+    margin-left: -10px;
+  }
+  #sale-ss1 {
+    width: 500px;
+    justify-content: center;
+  }
+  .repon {
+    font-size: 14px;
+    white-space: nowrap;
+  }
   .fist-section {
     display: flex;
     margin-top: -80px;
@@ -430,6 +451,7 @@
   }
   #sale-ss1 {
     width: 500px;
+    justify-content: center;
   }
   .second-section img,
   .Third-section img {
@@ -594,5 +616,91 @@
   }
 }
 
-@media (min-width: 991px) and (max-width: 990px) {
+@media (min-width: 991px) and (max-width: 1199px) {
+  .fist-section .text-center {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    align-items: center;
+  }
+  #sale-ss1 {
+    width: 500px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .block-section-second {
+    margin: 0 10px -20px 10px;
+    padding: 60px 0;
+  }
+  .block-section-second div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -30px 0;
+    padding: 0;
+  }
+  .d-block div p {
+    padding-bottom: 5px;
+  }
+  .block-section-second div img {
+    margin: 0;
+    width: 200px;
+  }
+  .second-section .container {
+    padding-bottom: 10px;
+  }
+  .fist-block-6th {
+    text-align: center;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .text-6th {
+    margin-left: -50px;
+  }
+  .th6-section div div .pt-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+    margin-left: -100px;
+  }
+  .section-8th {
+    height: 600px;
+    background-image: url("/img/bg-section-8.jpg");
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .floating-frame {
+    width: 80%; /* Chiều rộng của khung là 100% so với lớp cha */
+    height: 80%; /* Chiều cao của khung là 100% so với lớp cha */
+    background-image: url("/img/bg-section-2.png");
+    background-color: rgba(31, 27, 27, 0.8);
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 10%; /* Bắt đầu từ đỉnh của lớp cha */
+    left: 10%; /* Bắt đầu từ bên trái của lớp cha */
+    transform: translate(0, 0); /* Không cần dịch chuyển khung */
+    z-index: 9999; /* Đảm bảo khung nổi lên trên cùng */
+  }
+  .section-8th .text-white .th-8-chi .d-flex h2 {
+    border-radius: 50%;
+    background-color: rgb(251 214 138);
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  .th-8-text {
+    text-align: center;
+  }
+  .image-wrapper img {
+    width: 50%;
+    height: 450px;
+    margin: 0 5px;
+  }
 }

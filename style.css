@@ -59,7 +59,7 @@
 .second-section {
   background-image: url("/img/bg-section-2.png");
   background-color: black;
-  height: 500px;
+  height: 450px;
   z-index: 3;
   margin-top: -30px;
   border-radius: 10px;
@@ -79,7 +79,7 @@
   box-shadow: 0 0 0 5px rgb(67 66 65);
   border-radius: 10px;
   padding: 60px 10px;
-  margin: 0px 30px;
+  margin: 0px 10px;
 }
 .img-list-third-section {
   width: 350px;
@@ -112,6 +112,9 @@ z-index: 10; */
   background-color: #f1eeee;
   margin-bottom: 5px;
   border-radius: 10px;
+}
+.no-wrap {
+  white-space: nowrap;
 }
 
 .text-form {
@@ -234,4 +237,8 @@ z-index: 10; */
   right: 0; /* Đặt thẻ i bên phải của container */
   margin-right: 30px;
   font-size: 30px;
+}
+#sale-ss1 {
+  width: 500px;
+  justify-content: center;
 }
