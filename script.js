@@ -56,3 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(remainingLength + " ký tự còn lại");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy tham chiếu đến modal
+  var modal = document.getElementById("loginModal");
+  // Mở modal sau 15 giây
+  setTimeout(function () {
+    modal.style.display = "block";
+  }, 10000);
+
+  // Lấy tham chiếu đến phần tử span đóng modal
+  var closeBtn = document.querySelector("#loginModal .close");
+
+  // Khi người dùng bấm vào nút đóng, đóng modal
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Khi người dùng bấm ngoài modal, đóng modal
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+});

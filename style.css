@@ -1,3 +1,63 @@
+/* Style cho modal */
+.modal {
+  display: none; /* Mặc định ẩn modal */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ trong suốt */
+  overflow: auto;
+}
+
+/* Style cho nội dung modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto; /* Canh giữa modal */
+  padding: 20px;
+  border: 1px solid #0a67e9;
+  width: 500px; /* Chiều rộng của modal */
+  border-radius: 10px;
+  position: relative;
+}
+.img-form-auto {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Style cho nút đóng modal */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 15px; /* Điều chỉnh vị trí theo chiều dọc */
+  right: 30px; /* Điều chỉnh vị trí theo chiều ngang */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+#inputName,
+#inputPhoneNumber,
+#btn-fm-auto {
+  border-radius: 20px;
+  height: 40px;
+  border: 1px solid #0a67e9;
+}
+#btn-fm-auto {
+  background-color: #fbd68a;
+}
+#btn-fm-auto:hover {
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+/* ------------------------------------------------ */
 .fist-section {
   background-image: url("/img/banner-sftxvn-20230909081527-pkt_f.jpg");
   height: 500px;
@@ -12,6 +72,53 @@
 }
 .css-a {
   text-decoration: none;
+}
+.chat-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 200px; /* Kích thước ban đầu của nút */
+  height: 45px;
+  border-radius: 30px;
+  padding-top: 10px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 9999999;
+  transition: width 0.5s, height 0.5s; /* Hiệu ứng chuyển đổi kích thước */
+}
+.phone-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  left: 28px;
+  width: 200px; /* Kích thước ban đầu của nút */
+  height: 45px;
+  border-radius: 30px;
+  padding-top: 10px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 9999999;
+  transition: width 0.5s, height 0.5s; /* Hiệu ứng chuyển đổi kích thước */
+}
+.chat-button i {
+  padding-left: 5px;
+  font-size: 40px;
+}
+.phone-button i {
+  padding-right: 5px;
+}
+
+.chat-button:hover {
+  background-color: #fff;
 }
 
 .message {
