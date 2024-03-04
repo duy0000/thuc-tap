@@ -206,6 +206,32 @@
     width: 500px;
     justify-content: center;
   }
+  footer div {
+    flex-direction: column;
+  }
+  footer div .ft-first {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  footer div .no-wrap {
+    margin: 0;
+    padding: 0;
+    margin-left: -100px;
+  }
+  footer div h5 {
+    text-align: center;
+  }
+  #ft-sc-div {
+    width: 100%;
+    text-align: center;
+  }
+  #img-ft {
+    justify-content: flex-start;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media (min-width: 551px) and (max-width: 767px) {
   .button-nav {
@@ -429,6 +455,30 @@
   .th-8-text {
     text-align: center;
   }
+  footer div div {
+    padding-left: 5px;
+  }
+  footer div .ft-first .d-flex {
+    flex-direction: column;
+  }
+  #img-ft {
+    justify-content: flex-start;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  #first-block {
+    margin-left: 20px;
+  }
+  footer .no-wrap {
+    margin-left: 80px;
+  }
+  footer .no-wrap h5 {
+    margin-left: 0px;
+  }
+  #ft-div-f {
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -614,6 +664,15 @@
   .th-8-text {
     text-align: center;
   }
+  footer div .ft-first .d-flex {
+    flex-direction: column;
+  }
+  #img-ft {
+    justify-content: flex-start;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -677,16 +736,16 @@
     align-items: center;
   }
   .floating-frame {
-    width: 80%; /* Chiều rộng của khung là 100% so với lớp cha */
-    height: 80%; /* Chiều cao của khung là 100% so với lớp cha */
+    width: 80%;
+    height: 80%;
     background-image: url("/img/bg-section-2.png");
     background-color: rgba(31, 27, 27, 0.8);
     border: 1px solid #ccc;
     position: absolute;
-    top: 10%; /* Bắt đầu từ đỉnh của lớp cha */
-    left: 10%; /* Bắt đầu từ bên trái của lớp cha */
-    transform: translate(0, 0); /* Không cần dịch chuyển khung */
-    z-index: 9999; /* Đảm bảo khung nổi lên trên cùng */
+    top: 10%;
+    left: 10%;
+    transform: translate(0, 0);
+    z-index: 9999;
   }
   .section-8th .text-white .th-8-chi .d-flex h2 {
     border-radius: 50%;

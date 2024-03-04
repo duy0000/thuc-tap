@@ -12,7 +12,6 @@
 }
 .css-a {
   text-decoration: none;
-  color: black;
 }
 
 .message {
@@ -148,6 +147,12 @@ z-index: 10; */
 .p-d-top {
   padding-top: 45px;
 }
+.p-d-left {
+  padding-left: -40px;
+}
+.m-l {
+  margin-left: 40px;
+}
 
 .section-8th {
   background-color: #302b25;
@@ -241,4 +246,40 @@ z-index: 10; */
 #sale-ss1 {
   width: 500px;
   justify-content: center;
+}
+
+footer {
+  color: rgb(5, 31, 77);
+}
+
+/* footer div {
+  justify-content: space-evenly;
+} */
+
+footer div div {
+  padding-left: 50px;
+}
+.img-footer {
+  width: 44px;
+  height: 28px;
+  margin-right: 5px;
+}
+#img-ft {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.ft-first {
+  width: 700px;
+}
+footer:first-child {
+  width: 700px;
+}
+#ft-p-f {
+  width: 300px;
+  margin-right: -52px;
+}
+footer .css-a {
+  color: rgb(5, 31, 77);
 }
