@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Mở modal sau 15 giây
   setTimeout(function () {
     modal.style.display = "block";
-  }, 10000);
+  }, 1000);
 
   // Lấy tham chiếu đến phần tử span đóng modal
   var closeBtn = document.querySelector("#loginModal .close");

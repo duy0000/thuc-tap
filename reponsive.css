@@ -8,6 +8,12 @@
     font-size: 12px;
     white-space: nowrap;
   }
+  .modal-content,
+  .modal {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .logo {
     width: 60px;
     padding-bottom: 16px;
@@ -761,5 +767,12 @@
     width: 50%;
     height: 450px;
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .phone-button,
+  .chat-button {
+    display: none !important;
   }
 }

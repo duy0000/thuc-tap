@@ -14,7 +14,8 @@
 /* Style cho nội dung modal */
 .modal-content {
   background-color: #fefefe;
-  margin: 0 auto; /* Canh giữa modal */
+  margin-left: calc((100vw - 500px) / 2);
+  margin-right: calc((100vw - 500px) / 2);
   padding: 20px;
   border: 1px solid #0a67e9;
   width: 500px; /* Chiều rộng của modal */
@@ -88,7 +89,7 @@
   font-size: 24px;
   text-align: center;
   text-decoration: none;
-  z-index: 9999999;
+  z-index: 99;
   transition: width 0.5s, height 0.5s; /* Hiệu ứng chuyển đổi kích thước */
 }
 .phone-button {
@@ -106,7 +107,7 @@
   font-size: 24px;
   text-align: center;
   text-decoration: none;
-  z-index: 9999999;
+  z-index: 99;
   transition: width 0.5s, height 0.5s; /* Hiệu ứng chuyển đổi kích thước */
 }
 .chat-button i {
@@ -282,7 +283,7 @@ z-index: 10; */
   top: 50%;
   left: 35%;
   transform: translate(-50%, -50%);
-  z-index: 9999; /* Đảm bảo khung nổi lên trên cùng */
+  z-index: 6; /* Đảm bảo khung nổi lên trên cùng */
 }
 .section-8th .text-white .th-8-chi .d-flex h2 {
   border-radius: 50%;
