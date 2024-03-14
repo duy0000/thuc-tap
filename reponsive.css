@@ -1,0 +1,323 @@
+@media screen and (max-width: 1200px) {
+  .header-list {
+    display: none;
+  }
+  .header-list,
+  .header-list ul li:nth-child(even) {
+    margin: 0 0px;
+  }
+  .list-evaluate {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ss6-evaluate:nth-child(4) {
+    margin-top: 0px;
+  }
+  /* .ss6-evaluate:nth-child(5) {
+    margin-top: 0px;
+  } */
+}
+@media screen and (min-width: 1200px) {
+  .list-level-2 i {
+    display: none;
+  }
+  .list-level-2:hover ~ #menu-lv2 {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background-color: #fff;
+    position: relative;
+    padding-top: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .logo-close-mb {
+    display: none;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .ss6-evaluate:nth-child(5) {
+    margin-top: -187px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .content-top h1 {
+    font-size: 36px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  .content-top h1:last-child {
+  }
+  .first-section-beetwen .img-both-sides,
+  .first-section-bottom .img-both-sides {
+    display: none;
+  }
+  .first-section-list-logo {
+    padding: 0 0px;
+  }
+  .first-section-bottom:last-child {
+    margin-top: 10px;
+  }
+  .second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ss2-slide,
+  .ss2-content {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .ss2-slider-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fourth-section div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .ss6-evaluate-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .ss6-evaluate:nth-child(5) {
+    margin-top: -235px;
+  }
+  .ss7-list-feature {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .open-mobile {
+    display: block;
+  }
+
+  .header-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    display: flex;
+  }
+  .active-out {
+    animation: slideOutLeft 2s forwards;
+    left: -100%;
+    right: 100%;
+  }
+
+  @keyframes slideOutLeft {
+    from {
+      left: 0;
+      right: 0;
+    }
+    to {
+      left: -100%;
+      right: 100%;
+    }
+  }
+  .active-in {
+    left: 0;
+    right: 0;
+    animation: slideIn 2s forwards;
+    /* Sử dụng animation cho hiệu ứng trượt */
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .list-level-2 {
+    background-color: #fff;
+    width: 100%;
+    right: 0%;
+    top: 0;
+    bottom: 0;
+    left: 120%;
+  }
+  #menu-lv2 {
+    z-index: 99999;
+    right: 0%;
+    top: 0%;
+    bottom: 0;
+    width: 200px;
+    left: 60%;
+    display: block;
+    position: absolute;
+  }
+  #menu-lv2 ul li i {
+    font-size: 20px;
+    padding-right: 50px;
+  }
+  #menu-lv2 ul li:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .active-lv2-in {
+    animation: slideinlv2 2s forwards;
+    left: 00%;
+  }
+  .close-lv2 {
+    display: block;
+  }
+  @keyframes slideinlv2 {
+    from {
+      left: -150%;
+    }
+    to {
+      left: -0%;
+    }
+  }
+  .active-lv2-out {
+    animation: slideOutlv2Left 2s forwards;
+    left: -150%;
+  }
+
+  @keyframes slideOutlv2Left {
+    from {
+      left: -0%;
+    }
+    to {
+      left: -150%;
+    }
+  }
+  .close-lv2 {
+    font-size: 30px;
+    padding-right: 80px;
+  }
+  .list-level-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list-level-2 i {
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .header-list ul {
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    /* top: -250px; */
+  }
+  .header-list ul li {
+    width: 100%;
+    top: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #999;
+  }
+  .header-list ul li:first-child {
+    border: none;
+  }
+}
+@media screen and (max-width: 804px) {
+  .first-section-bottom div:nth-child(2) img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-button {
+    display: none;
+  }
+  .third-section-content-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-list ul {
+    /* top: -150px; */
+  }
+  .header {
+    display: flex;
+  }
+  .list-evaluate {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ss6-evaluate:nth-child(2) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .ss6-evaluate-top {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    display: flex;
+  }
+  .ss6-evaluate {
+    margin-top: 0 !important;
+  }
+  .header-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content-top h1 {
+    font-size: 25px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+  .ss3-image-list {
+    width: 100%;
+  }
+  .ss7-list-feature {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 551px) {
+  .ss7-list-feature {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .list-content-ss3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .third-section-content-bottom {
+    padding: 0;
+    margin: 0;
+  }
+  .third-section-content-bottom div p {
+    padding-left: 10px;
+  }
+  .header-list,
+  .header-list ul {
+    width: 100%;
+    height: 100%;
+    /* top: -170px; */
+  }
+  .list-evaluate {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ss6-evaluate:nth-child(4) {
+    margin-top: 0px;
+  }
+  .ss6-evaluate:nth-child(5) {
+    margin-top: opx;
+  }
+}
