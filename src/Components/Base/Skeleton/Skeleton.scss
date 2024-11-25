@@ -1,0 +1,45 @@
+@include b(skeleton) {
+  @include set-component-var('skeleton', $skeleton);
+}
+
+@mixin skeleton-color() {
+  background: linear-gradient(
+    90deg,
+    getCssVar('skeleton-color') 25%,
+    getCssVar('skeleton-to-color') 37%,
+    getCssVar('skeleton-color') 63%
+  );
+  background-size: 400% 100%;
+  animation: #{$namespace}-skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes #{$namespace}-skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@include b(skeleton) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  @each $unit in (first-line, paragraph) {
+    @include e($unit) {
+      height: 16px;
+      margin-top: 16px;
+      background: getCssVar('skeleton-color');
+    }
+  }
+
+  @include when(animated) {
+    .#{$namespace}-skeleton__item {
+      @include skeleton-color();
+    }
+  }
+}

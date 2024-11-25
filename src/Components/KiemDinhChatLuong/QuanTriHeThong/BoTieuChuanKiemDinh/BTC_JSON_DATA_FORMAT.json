@@ -1,0 +1,12 @@
+{
+  "KT_KDCL_BoTieuChuan_Ten": "",
+  "KT_KDCL_BoTieuChuan_MoTa": "",
+  "KT_KDCL_BoTieuChuan_Active": true,
+  "KT_KDCL_BoTieuChuan_JSON_DATA": [
+    {
+      "KT_KDCL_BoTieuChuan_TenCot": "",
+      "KT_KDCL_BoTieuChuan_BatBuoc": false,
+      "KT_KDCL_BoTieuChuan_ThuTu": 1
+    }
+  ]
+}

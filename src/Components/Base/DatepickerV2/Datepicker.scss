@@ -1,0 +1,146 @@
+@include b(datepicker) {
+  @include e(trigger) {
+    @include when(disabled) {
+      cursor: not-allowed;
+    }
+  }
+
+  @include e(panel-wrapper) {
+    padding: 7px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    width: 260px;
+
+    > [data-popper-role='arrow'] {
+      display: none;
+    }
+  }
+
+  @include e(panel-header) {
+    display: flex;
+    gap: 6px;
+    padding: 4px 7px;
+  }
+
+  &__month-select,
+  &__year-select {
+    width: 100px !important;
+    background-color: getColor(gray-3);
+    flex: 1;
+
+    svg {
+      display: none;
+    }
+  }
+
+  @include e(date) {
+    position: relative;
+    cursor: pointer;
+    color: getColor(text, 0.9);
+    transition: all 0.25 ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 13px;
+      transition: all 0.25s ease;
+    }
+
+    &::before {
+      transform: scale(0.75);
+      opacity: 0.4;
+    }
+
+    &:hover {
+      color: getColor(primary);
+
+      &:active {
+        &::before {
+          transform: scale(0.86);
+        }
+      }
+
+      &::before {
+        opacity: 1;
+        transform: scale(0.95);
+        background: getColor(primary, 0.25);
+      }
+    }
+
+    &.is-selected {
+      color: #fff;
+      font-weight: 500;
+      &::before {
+        opacity: 1;
+        transform: scale(0.95);
+        background: getColor(primary);
+      }
+    }
+
+    &.is-today {
+      &:not(:hover):not(.is-selected) {
+        color: getColor(primary);
+        font-weight: 500;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 0;
+        bottom: 1px;
+        z-index: -1;
+        transition: all 0.2s ease;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 12px;
+        background-color: getColor(primary);
+        border-radius: 10px;
+      }
+
+      &:hover::after {
+        transform: translate(-50%, -1px);
+      }
+    }
+
+    &.is-next-month,
+    &.is-prev-month {
+      color: #a8abb2;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &-table {
+    width: 100%;
+    margin-top: 4px;
+    overflow: hidden;
+
+    thead tr {
+      box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.1);
+    }
+    th {
+      padding: 6px;
+      color: getColor(text, 0.8);
+      font-weight: 500;
+    }
+
+    td {
+      width: 35px;
+      height: 35px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}

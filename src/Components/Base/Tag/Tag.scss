@@ -1,0 +1,23 @@
+@include b(tag) {
+  @include set-var-value(color, getCssVar(primary-lighter));
+
+  background-color: getColor('color', 0.06);
+  user-select: none;
+  border-color: getColor('color');
+  color: getColor('color');
+  //color: #2871ba;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 24px;
+  padding: 0 9px;
+  margin: 0 4px;
+  font-size: 14px;
+  line-height: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}

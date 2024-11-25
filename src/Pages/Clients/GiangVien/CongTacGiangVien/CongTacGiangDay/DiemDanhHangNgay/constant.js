@@ -1,0 +1,15 @@
+export const filterDiemDanhHangNgay = {
+  MaSinhVien: '',
+  HoDem: '',
+  Ten: '',
+  NgaySinh: '',
+  TenLop: '',
+  CoPhep: '',
+  KhongPhep: '',
+  SoTiet: '',
+  GhiChu: '',
+  VangCoPhep: '',
+  VangKhongPhep: '',
+  TongSoTiet: '',
+  TiLeVang: '',
+}

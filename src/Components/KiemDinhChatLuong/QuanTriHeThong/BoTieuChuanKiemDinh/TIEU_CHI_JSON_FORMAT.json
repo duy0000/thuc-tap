@@ -1,0 +1,17 @@
+{
+  "KT_KDCL_TieuChi_IDTieuChuan": "",
+  "KT_KDCL_TieuChi_ID": "",
+  "KT_KDCL_TieuChi_Ma": "",
+  "KT_KDCL_TieuChi_JSON_DATA": [
+    {
+      "KT_KDCL_BoTieuChuan_TenCot": "TenCot",
+      "KT_KDCL_BoTieuChuan_NoiDung": ""
+    }
+  ],
+  "KT_KDCL_TieuChi_MocChuan_JSON_DATA": [
+    {
+      "KT_KDCL_TieuChi_MocChuan_Ten": "",
+      "KT_KDCL_TieuChi_MocChuan_MoTa": ""
+    }
+  ]
+}
